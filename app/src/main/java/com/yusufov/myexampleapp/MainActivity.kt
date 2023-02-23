@@ -21,7 +21,10 @@ class MainActivity : AppCompatActivity() {
         println(" ")
         println("Qurbana Salam")
 
-
+        binding.btnKecid.setOnClickListener{
+            val intent = Intent(this,OsirisActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
