@@ -1,0 +1,17 @@
+Index: app/src/main/java/com/yusufov/myexampleapp/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/yusufov/myexampleapp/MainActivity.kt b/app/src/main/java/com/yusufov/myexampleapp/MainActivity.kt
+--- a/app/src/main/java/com/yusufov/myexampleapp/MainActivity.kt	
++++ b/app/src/main/java/com/yusufov/myexampleapp/MainActivity.kt	(date 1677135694352)
+@@ -18,6 +18,8 @@
+         val view = binding.root
+         setContentView(view)
+ 
++        println(" ")
++
+     }
+ 
+     fun btnYarimIllik(view:View){
