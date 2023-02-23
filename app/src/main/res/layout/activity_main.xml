@@ -80,7 +80,7 @@
             android:background="@drawable/custom_button_mainpage"
             android:text="ORTALAMANIN HESABLANMASI"
             android:layout_marginTop="10dp"
-            android:onClick="btnOrtalama"
+
             />
 
     </LinearLayout>

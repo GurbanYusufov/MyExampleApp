@@ -32,10 +32,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, SualSayinaGore::class.java)
         startActivity(intent)
     }
-    fun btnOrtalama(view:View){
-        val intent = Intent(this, Ortalama::class.java)
-        startActivity(intent)
-    }
+
 
 
 }
