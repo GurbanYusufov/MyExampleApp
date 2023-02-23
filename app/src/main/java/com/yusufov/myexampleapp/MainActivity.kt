@@ -18,8 +18,13 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        println(" ")
+        println("Qurbana Salam")
 
-
+        binding.btnKecid.setOnClickListener{
+            val intent = Intent(this,OsirisActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
