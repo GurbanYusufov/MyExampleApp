@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
 
         println(" ")
 
+
+
+
     }
 
     fun btnYarimIllik(view:View){
