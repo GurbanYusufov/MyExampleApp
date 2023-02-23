@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63939292"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/custom_textview_mainpage"
+        android:text="Zəhmət olmasa müvafiq seçimi edin. Seçiminizə uyğun pəncərə açılacaq"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@id/txt_Main"
+        >
+        <Button
+            android:id="@+id/btn_yarimIllikQiymetlendirme"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/custom_button_mainpage"
+            android:text="YARIMİLLİK   QİYMƏTLƏNDİRMƏ"
+            android:layout_marginTop="40dp"
+            android:onClick="btnYarimIllik"
+            />
+
+        <Button
+            android:id="@+id/btn_illikQiymetlendirme"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/custom_button_mainpage"
+            android:text="İLLİK QİYMƏTLƏNDİRMƏ"
+            android:layout_marginTop="10dp"
+            android:onClick="btnIlik"
+            />
+
+        <Button
+            android:id="@+id/btn_sualSayinaGoreBal"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/custom_button_mainpage"
+            android:text="SUAL SAYINA GÖRƏ BAL(EYNİ SƏVİYYƏLİ SUALLAR ÜÇÜN)"
+            android:layout_marginTop="10dp"
+            android:onClick="btnSualSayi"
+            />
+
+        <Button
+            android:id="@+id/btn_ortalamaninHesablanmasi"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/custom_button_mainpage"
+            android:text="ORTALAMANIN HESABLANMASI"
+            android:layout_marginTop="10dp"
+            android:onClick="btnOrtalama"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
