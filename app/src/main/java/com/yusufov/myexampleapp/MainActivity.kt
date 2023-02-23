@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         println(" ")
-
+        println("Qurbana Salam")
 
 
 
