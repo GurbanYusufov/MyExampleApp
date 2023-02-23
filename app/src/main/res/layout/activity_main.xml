@@ -83,22 +83,19 @@
 
             />
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/btnKecid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button_mainpage"
+            android:text="Osirise Kecid"
+            android:textSize="18sp"
+            android:textStyle="bold"
 
-    <Button
-        android:id="@+id/btnKecid"
-        android:layout_width="215dp"
-        android:layout_height="66dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="94dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="30dp"
-        android:text="Osirise Kecid"
-        android:textAllCaps="false"
-        />
+            />
+
+    </LinearLayout>
 
 
 </RelativeLayout>
