@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<item android:id="@+id/homeMenu"
+<item android:id="@+id/action_homeMenu"
     android:title="home" />
     <item
         android:id="@+id/action_profile"
