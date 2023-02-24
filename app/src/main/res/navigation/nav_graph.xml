@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/kratosFragment2">
+    <fragment
+        android:id="@+id/kratosFragment2"
+        android:name="com.yusufov.myexampleapp.KratosFragment"
+        android:label="fragment_kratos"
+        tools:layout="@layout/fragment_kratos" >
+        <action
+            android:id="@+id/action_kratosFragment2_to_thorFragment2"
+            app:destination="@id/thorFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/thorFragment2"
+        android:name="com.yusufov.myexampleapp.ThorFragment"
+        android:label="fragment_thor"
+        tools:layout="@layout/fragment_thor" >
+        <action
+            android:id="@+id/action_thorFragment2_to_kratosFragment2"
+            app:destination="@id/kratosFragment2" />
+    </fragment>
+</navigation>
