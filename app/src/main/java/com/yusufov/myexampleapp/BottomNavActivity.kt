@@ -3,6 +3,7 @@ package com.yusufov.myexampleapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.fragment.app.commit
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -12,7 +13,9 @@ class BottomNavActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val view = R.layout.activity_bottom_nav
         setContentView(view)
-
+        supportFragmentManager.commit {
+            setCustomAnimations(android.R.anim.fade_out,android.R.anim.fade_in)
+        }
         var navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment
         val navController = navHostFragment.navController
 
@@ -20,11 +23,13 @@ class BottomNavActivity : AppCompatActivity() {
         bottomView.setOnItemSelectedListener {
             when(it.itemId) {
                 R.id.action_homeMenu -> {
+                  //  findViewById<BottomNavigationView>(R.id.bottomNavigationView).setBackgroundColor(resources.getValue())
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainerView, KratosFragment()).commit()
                     true
                 }
                 R.id.action_profile->{
+
                     supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView, ThorFragment()).commit()
 
                     true

@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#878787</color>
     <color name="green">#36D13C</color>
+    <color name="fragmentBackforKratos">#FFE2E1</color>
+    <color name="fragmentBackForThor">#C5FFF9</color>
 </resources>
