@@ -26,6 +26,7 @@ class BottomNavActivity : AppCompatActivity() {
                 }
                 R.id.action_profile->{
                     supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView, ThorFragment()).commit()
+
                     true
                 }
                 else -> false

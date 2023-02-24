@@ -3,8 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 <item android:id="@+id/action_homeMenu"
-    android:title="home" />
+    android:title="home"
+    android:icon="@drawable/thor"
+    />
     <item
         android:id="@+id/action_profile"
+        android:icon="@drawable/godwealth"
         android:title="thor" />
 </menu>
