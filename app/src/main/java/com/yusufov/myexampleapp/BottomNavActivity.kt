@@ -16,10 +16,12 @@ class BottomNavActivity : AppCompatActivity() {
         supportFragmentManager.commit {
             setCustomAnimations(android.R.anim.fade_out,android.R.anim.fade_in)
         }
-        var navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment
+        var navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         val navController = navHostFragment.navController
 
         val bottomView : BottomNavigationView = findViewById(R.id.bottomNavigationView)
+        bottomView.background = null
+        bottomView.menu.getItem(1).isEnabled = false
         bottomView.setOnItemSelectedListener {
             when(it.itemId) {
                 R.id.action_homeMenu -> {
@@ -34,6 +36,7 @@ class BottomNavActivity : AppCompatActivity() {
 
                     true
                 }
+
                 else -> false
             }
         }
