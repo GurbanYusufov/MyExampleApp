@@ -8,18 +8,24 @@
         android:id="@+id/kratosFragment2"
         android:name="com.yusufov.myexampleapp.KratosFragment"
         android:label="fragment_kratos"
-        tools:layout="@layout/fragment_kratos" >
-        <action
-            android:id="@+id/action_kratosFragment2_to_thorFragment2"
-            app:destination="@id/thorFragment2" />
-    </fragment>
+        tools:layout="@layout/fragment_kratos"/>
     <fragment
         android:id="@+id/thorFragment2"
         android:name="com.yusufov.myexampleapp.ThorFragment"
         android:label="fragment_thor"
-        tools:layout="@layout/fragment_thor" >
+        tools:layout="@layout/fragment_thor"/>
+    <fragment
+        android:id="@+id/fragmentFirst2"
+        android:name="com.yusufov.myexampleapp.FragmentFirst"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
         <action
-            android:id="@+id/action_thorFragment2_to_kratosFragment2"
-            app:destination="@id/kratosFragment2" />
+            android:id="@+id/action_fragmentFirst2_to_fragmentSecond2"
+            app:destination="@id/fragmentSecond2" />
     </fragment>
+    <fragment
+        android:id="@+id/fragmentSecond2"
+        android:name="com.yusufov.myexampleapp.FragmentSecond"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
 </navigation>
