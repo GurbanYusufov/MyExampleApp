@@ -12,7 +12,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/ThorText"
         android:layout_width="224dp"
         android:layout_height="96dp"
         android:text="Salam Thor"
@@ -22,4 +22,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/killButton"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:text="Kill the Thor"
+
+        android:background="@drawable/button_selector_blue_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ThorText"
+        app:layout_constraintVertical_bias="0.223" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
