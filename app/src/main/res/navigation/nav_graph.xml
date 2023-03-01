@@ -10,16 +10,22 @@
         android:label="fragment_kratos"
         tools:layout="@layout/fragment_kratos"/>
     <fragment
+
         android:id="@+id/thorFragment2"
         android:name="com.yusufov.myexampleapp.ThorFragment"
         android:label="fragment_thor"
-        tools:layout="@layout/fragment_thor"/>
+        tools:layout="@layout/fragment_thor">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="thor" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentFirst2"
         android:name="com.yusufov.myexampleapp.FragmentFirst"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
         <action
+            app:popUpToSaveState="true"
             android:id="@+id/action_fragmentFirst2_to_fragmentSecond2"
             app:destination="@id/fragmentSecond2" />
     </fragment>
